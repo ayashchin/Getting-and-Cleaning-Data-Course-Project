@@ -47,4 +47,5 @@ Arrange by subject, then activity in descending order and assign to new variable
 Melt the data using Subject and Activity as factors. Assign to final variable: tidy_data.
 Group data on subject, then activity using dplyr group_by function. 
 Use dplyr summarize function to calculate the mean for each variable for each activity and each subject. 
-Print tidy_data set.
+Write tidy_data into table labeled: tidy_data_table.csv.
+Read back into R and print head.
