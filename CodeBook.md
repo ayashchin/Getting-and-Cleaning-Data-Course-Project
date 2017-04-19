@@ -34,12 +34,12 @@ Assign to new variable: activity_variables
 ### 4) Create Subset Filter for Mean & Standard Deviation
 Read in features.txt from Harzip[2].
 Use grep to find and create new variable: desired_measures, corresponding to the listed mean and standard deviation labels, denoted by mean() and std() in the source data.
-### 5)Read Text Files into a List & Convert to Data Tables
+### 5) Read Text Files into a List & Convert to Data Tables
 Use lapply to create a list of the HARzip files containing observations and convert to data tables for use with dplyr package.
-### 6)Merge Subject & Activity Data into One Set
+### 6) Merge Subject & Activity Data into One Set
 Using the desired_measures variable as a subset filter for X_test.txt and X-train.txt data, create two clean data sets for testing and training data, labeled: clean_data_test and clean_data_train respectively.
 Merge both sets using rbind function. 
-### 7)Add Descriptive Labels for Table
+### 7) Add Descriptive Labels for Table
 Convert activity column to factor and use activity_variables to assign corresponding labels in the data table.
 Convert subject to factor for use in final tidy data set.
 Arrange by subject, then activity in descending order and assign to new variable: clean_merge.
