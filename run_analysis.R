@@ -58,6 +58,6 @@ tidy_data <- rename(tidy_data,Variable=variable,Observation=value)
 tidy_data <- group_by(tidy_data,Subject,Activity,Variable)
 tidy_data <- summarize(tidy_data,mean(Observation))
 
-tidy_data_table <- write.table(tidy_data,file="tidy_data.csv")
-tidy_data_table <- read.table("tidy_data.csv")
+tidy_data_table <- write.table(tidy_data,file="tidy_data.txt")
+tidy_data_table <- read.table("tidy_data.txt")
 head(tidy_data_table)
